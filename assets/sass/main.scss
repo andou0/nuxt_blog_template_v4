@@ -1,0 +1,92 @@
+$black: rgba(0, 0, 0, 0.87);
+$grey: rgba(0, 0, 0, 0.54);
+$primary: #0053A3;
+
+// commons ///////////////////////////////
+body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+input::placeholder {
+  font-size: .875rem;
+}
+.my-align-center {
+  display: flex;
+  align-items: center;
+}
+.my-font-bold {
+  font-weight: 600 !important;
+}
+.my-text-black {
+  color: $black !important;
+}
+.my-text-grey {
+  color: $grey !important;
+}
+a.my-link {
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+a.my-link-black {
+  @extend .my-text-black;
+}
+
+// vuetify custom ///////////////////////
+// post code block 320pxレイアウト崩れ対応
+.v-application code {
+  display: unset !important;
+}
+// v-list hover color
+a.v-list-item--link:hover {
+  .my-list-hover-color {
+    transition: all 300ms 0s ease;
+    color: $primary;
+  }
+}
+//tooltip
+.v-tooltip__content {
+  padding: 4px 8px !important;
+}
+
+// my sidebar content /////////////////////////////
+.my-title {
+  padding: 16px 0 8px;
+  font-size: 1rem !important;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.009375em;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+.my-text-content,
+.my-subtitle,
+li.my-list-content {
+  font-size: 0.875rem !important;
+  line-height: 1.375rem;
+  letter-spacing: 0.03em;
+}
+.my-text-content {
+  padding: 8px 0;
+  font-weight: 400;
+}
+.my-subtitle {
+  padding: 8px 0 4px;
+  font-weight: 600;
+}
+ul.my-list,
+ol.my-list {
+  margin-left: .3em !important;
+  padding-left: 1em !important;
+  li.my-list-content {
+    font-weight: 400;
+    small {
+      color: #666;
+      letter-spacing: 0.01em;
+    }
+  }
+}
+
+// adsense
+.adslot-div {
+  background-color: #BDBDBD;
+  text-align: center;
+}
