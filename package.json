@@ -19,7 +19,7 @@
     "contentful": "^7.14.0",
     "dayjs": "^1.8.23",
     "nuxt": "^2.0.0",
-    "prismjs": "^1.19.0",
+    "prismjs": "^1.24.0",
     "vue-markdown": "^2.2.4",
     "vue-tweet-embed": "^2.4.0"
   },
